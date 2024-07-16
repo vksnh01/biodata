@@ -4,6 +4,7 @@ import Education from '../NavButton/Education/Education'
 import Certification from '../NavButton/Certification'
 import Contact from '../NavButton/Contact'
 import Interest from '../NavButton/Interest'
+import Link from '../NavButton/Link';
 // import About from '../NavButton/About'
 const  data = [
     {
@@ -34,7 +35,7 @@ const  data = [
         id:"5",
         name:"Links",
         path:"/projectLinks",
-        link:<Interest />
+        link:<Link />
     },
     // {
     //     id:"6",
