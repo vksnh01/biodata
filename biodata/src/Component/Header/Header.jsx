@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
-import logo from "../IMG/logo1.jpg";
+import logo from "../IMG/logocopy.ico";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import headerData from "./HeaderData";
@@ -33,8 +33,8 @@ function Header() {
           {navButton.map((elem, ind) => {
             return (
               <>
-                <li key={ind}>
-                  <NavLink onClick={() => setNavBool(!navBool)} exact to={elem.path}>
+                <li >
+                  <NavLink onClick={() => setNavBool(!navBool)} exact to={elem.path} key={ind}>
                     {elem.name}
                   </NavLink>
                 </li>

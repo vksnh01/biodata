@@ -25,11 +25,18 @@
   width: 10%;
   height: 10vh;
   margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .logo > img {
   width: 50%;
-  height: 10vh;
-  border-radius: 50%;
+  height: 9vh;
+  border-radius: 5%;
+  background-color: white;
 }
 .nav-btn > ul {
   display: flex;
@@ -42,32 +49,33 @@
   height: 10vh;
   list-style: none;
   /* background-color: black; */
- 
 }
 .nav-btn > ul > li {
   margin: 10px 15px;
   font-size: 24px;
   text-transform: capitalize;
 }
-.nav-btn > ul >li > a{
-    position: relative;
+.nav-btn > ul > li > a {
+  position: relative;
 }
-.nav-btn > ul >li > a:after{
-    content: '';
-    position: absolute;
-    width: 0; height: 3px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: white;
-    transition: width .2s ease;
-    -webkit-transition: width .2s ease;}
+.nav-btn > ul > li > a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+}
 
-.nav-btn > ul >li > a:hover:after {
-    width: 100%;
+.nav-btn > ul > li > a:hover:after {
+  width: 100%;
   left: 0;
   background: white;
-  }
+}
 .nav-btn > ul > li > a {
   text-decoration: none;
   color: white;
@@ -115,10 +123,9 @@
     height: 10vh;
     background: #003c80;
     /* z-index: 4; */
-
   }
-  .nav-btn{
-    margin-right: 0px!important;
+  .nav-btn {
+    margin-right: 0px !important;
   }
   .nav-btn > ul {
     z-index: 999;
@@ -127,30 +134,26 @@
     margin: 0px !important;
     width: 100% !important;
     position: absolute;
-    transition: all 0.70s ease-in-out!important;
+    transition: all 0.7s ease-in-out !important;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: flex-start;
     justify-content: center;
     align-items: flex-start;
-   
   }
   .nav-btn > .show {
     left: 0%;
-   
   }
 
   .nav-btn > .hide {
     left: -100%;
   }
- .nav-btn > ul > li{
+  .nav-btn > ul > li {
     width: 100%;
- }
- .nav-btn > ul > li >a{
+  }
+  .nav-btn > ul > li > a {
     width: 100%;
     display: block;
- }
-
-
+  }
 }

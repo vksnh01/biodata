@@ -16,10 +16,10 @@ function AllCompFileHandler() {
         <BrowserRouter>
           <Header />
           <Routes>
-            {navButton.map((elem) => {
+            {navButton.map((elem,ind) => {
               return (
                 <>
-                  <Route exact path={elem.path} element={elem.link} />
+                  <Route key={ind} exact path={elem.path} element={elem.link} />
                 </>
               );
             })}
